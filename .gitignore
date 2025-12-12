@@ -1,0 +1,12 @@
+
+*.db
+detox_users.db
+
+__pycache__/
+*.pyc
+
+venv/
+env/
+.env
+
+.DS_Store
