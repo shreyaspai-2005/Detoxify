@@ -1,0 +1,8 @@
+pip install: (all of this)
+streamlit
+pandas
+easyocr
+numpy
+Pillow
+plotly
+scikit-learn
