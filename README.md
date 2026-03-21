@@ -2,15 +2,19 @@
 
 **Detoxify** is an AI-powered, gamified web application designed to help users reduce their screen time. By combining OCR technology for automated tracking with a "Play-to-Earn" rewards system, Detoxify turns the difficult task of digital detoxing into an engaging game.
 
+> ⚠️ **Note:** This project is currently in its **Prototype Stage**. Certain advanced features like ML-based prediction and financial withdrawals are simulated for demonstration purposes.
+
+---
+
 ## 🚀 Key Features
 
 ### 1. 🤖 AI-Powered Tracking (OCR)
-- Upload screenshots of your phone's "Digital Wellbeing" or "Screen Time" page.
+- Upload screenshots of your phone's "Digital Wellbeing" or "Screen Time" page.    
 - **EasyOCR** automatically extracts:
   - Total Screen Time
   - YouTube Usage
   - Instagram Usage
-- No manual data entry required!
+- No manual data entry required!!
 
 ### 2. 🏆 Gamified Challenges
 Complete difficulties levels to earn points:
@@ -18,20 +22,27 @@ Complete difficulties levels to earn points:
 - **Medium:** *YouTube Diet* & *Reel Rehab* (Limit specific apps under 3 hours).
 - **Hard:** *Monk Mode* (Total usage under 2 hours).
 
-### 3. 🔮 AI Prediction Model
-- Uses **Linear Regression (Machine Learning)** to analyze your past behavior.
-- Forecasts your screen time for the next 7 days to help you plan ahead.
-
-### 4. 💰 Virtual Economy
-- Earn **Points** for every successful day.
-- Redeem points for **Wallet Balance** (in ₹ INR). []
-- **Withdrawal System:** Simulated interface for UPI and Bank Transfers.
-
-### 5. 📊 Analytics Dashboard
+### 3. 📊 Analytics Dashboard
 - Interactive **Plotly** charts visualizing your digital history.
 - Compare Total Time vs. Social Media usage side-by-side.
 - Daily "Tip of the Day" for mental wellness.
+- Real-time "Redeemable Value" calculation based on user performance.
+  
 
+> 🧪 Experimental Features (In-Development / Demo Only)
+
+> These features below represents the future roadmap of Detoxify and are currently in the **simulation/testing phase**:
+
+### 4. 🔮 AI Prediction Model:
+  - **Status:** *Conceptual/Experimental.*
+  - Integrated with **scikit-learn (Linear Regression)** to model and forecast weekly screen time trends.
+  - **Logic:** The algorithmic logic is fully functional; however, the model currently operates in a **"Cold Start"** phase and requires consistent user logging to improve predictive accuracy. (have not tested with the accuracy at present, so can't tell as per now)
+    
+### 5. 💸 UPI & Bank Withdrawal:
+  - **Status:** *Demo UI.*
+  - A simulated interface for UPI and Bank transfers to demonstrate the "cash-out" user journey.
+  - **Logic:**  For the prototype, these transactions are **simulated** and do not connect to live payment gateways. We will try in future to contact with UPI gateways or Bank for real-time transactions.
+    
 ---
 
 ## 🛠️ Tech Stack
@@ -40,7 +51,7 @@ Complete difficulties levels to earn points:
 - **Backend:** Python
 - **Database:** SQLite (Serverless)
 - **Machine Learning:** Scikit-learn (Linear Regression)
-- **Computer Vision:** EasyOCR & OpenCV (Text Extraction)
+- **Computer Vision:** EasyOCR (Text Extraction)
 - **Visualization:** Plotly Express
 
 ---
@@ -54,7 +65,7 @@ Follow these steps to run the project locally on your machine.
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/yourusername/detoxify.git](https://github.com/yourusername/detoxify.git)
+git clone https://github.com/shreyaspai-2005/Detoxify
 cd detoxify
 ```
 
