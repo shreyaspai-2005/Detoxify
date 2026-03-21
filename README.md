@@ -73,7 +73,7 @@ cd detoxify
 
 ### 3. Run the Application
 ```bash
-streamlit run app.py
+streamlit run detoxmain.py
 ```
 ### 📝 License
 [GNU General Public License (GPL) v3.0](LICENSE)
