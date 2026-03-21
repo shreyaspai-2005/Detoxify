@@ -60,21 +60,50 @@ Complete difficulties levels to earn points:
 
 Follow these steps to run the project locally on your machine.
 
-### Prerequisites
-- Python 3.8 or higher installed.
-
+### Prerequisite
+> Ensure you have Python 3.12+ installed on your system. You can check this by typing `python --version` in your terminal.
+  
 ### 1. Clone the Repository
-```bash
-git clone https://github.com/shreyaspai-2005/Detoxify
-cd detoxify
-```
+- Open your terminal (Command Prompt or Git Bash) and run:
+  
+  ```bash
+  git clone https://github.com/shreyaspai-2005/Detoxify
+  cd detoxify
+  ```
 
-### 2. Install the packages in the requirements.txt.
+### 2. Create a Virtual Environment (Recommended)
+- This keeps the project libraries separate from your other apps:
+  
+  ```bash
+  # Windows
+  python -m venv venv
+  venv\Scripts\activate
+  
+  # Mac/Linux
+  python3 -m venv venv
+  source venv/bin/activate
+  ```
+  
+### 3. Install Dependencies
+- Install all required AI and web libraries using the `requirements.txt` file:
+  
+  ```bash
+  pip install -r requirements.txt
+  ```
+  `Note: The first time you run this, it may take a few minutes as it downloads the EasyOCR and PyTorch models.`
+  
+### 4. Launch the Web App
+- Start the Streamlit server:
+  ```bash
+  streamlit run detoxmain.py
+  ```
 
-### 3. Run the Application
-```bash
-streamlit run detoxmain.py
-```
+### 5. Accessing the App
+- Your default browser will open to `http://localhost:{anything}`.
+- Register a new account.
+- Go to the Log Data tab and upload a screenshot of your phone's screen time (ensure it shows "YouTube" or "Instagram" clearly).
+- Click Analyze to see the AI extract your data!
+
 ### 📝 License
 [GNU General Public License (GPL) v3.0](LICENSE)
 
